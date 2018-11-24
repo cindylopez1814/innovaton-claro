@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TerapeutaDashboardComponent } from './components/terapeuta-dashboard/terapeuta-dashboard.component';
 import { MapaUserComponent } from './components/mapa-user/mapa-user.component';
+import { FormValidationComponent } from './components/form-validation/form-validation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TerapeutaDashboardComponent,
-    MapaUserComponent
+    MapaUserComponent,
+    FormValidationComponent
   ],
   imports: [
     BrowserModule,
