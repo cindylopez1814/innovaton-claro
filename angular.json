@@ -131,5 +131,10 @@
       }
     }
   },
-  "defaultProject": "innovaton-teleton"
+  "defaultProject": "innovaton-teleton",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
