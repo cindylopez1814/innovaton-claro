@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmbedVideo } from 'ngx-embed-video';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AvatarComponent } from './components/avatar/avatar.component';
 
 import { AuthService } from './service/auth.service';
 import { StarRatingModule } from 'angular-star-rating';
@@ -26,7 +27,8 @@ import { StarRatingModule } from 'angular-star-rating';
     TerapeutaDashboardComponent,
     MapaUserComponent,
     FormValidationComponent,
-    LoginComponent
+    LoginComponent,
+    AvatarComponent
   ],
   imports: [
     BrowserModule,
