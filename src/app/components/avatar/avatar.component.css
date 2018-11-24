@@ -1,0 +1,26 @@
+div{
+  justify-content: space-around;
+  display: inline;
+}
+
+img {
+  height: 30vh;
+}
+
+section{
+  text-align: center;
+}
+
+button{
+  background-color: #D53541;
+  color: #FFF;
+  font-size: 22px;
+  padding: 4%;
+  border-radius: 4px;
+  width: 80%;
+  margin: 10%;
+}
+
+.select{
+  background-color: #EE7B84;
+}
