@@ -2,13 +2,17 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TerapeutaDashboardComponent } from './components/terapeuta-dashboard/terapeuta-dashboard.component';
 import { MapaUserComponent } from './components/mapa-user/mapa-user.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+  {
+    path: 'Login', component: LoginComponent
+  },
   {
     path: 'terapeuta', component: TerapeutaDashboardComponent
   },
   {
-    path: 'map', component: MapaUserComponent
+    path: 'Home', component: MapaUserComponent
   },
 ];
 
