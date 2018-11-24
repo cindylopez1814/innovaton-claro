@@ -1,0 +1,43 @@
+.show{
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}
+.list-group-item{
+    text-align: center;
+    width: 100%;
+}
+.list-group-item.active{
+    background-color: #d53541!important;
+}
+.starImg{
+    width: 20px;
+    height: 20px;
+    color: #F18F01
+}
+.containerStars{
+    display: flex;
+    margin-top: 5%;
+}
+.btnStars{
+    margin-left: 10%;
+}
+.title{
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+    
+}
+#nav-tab{
+    float: left;
+    width: 100%;
+}
+.nav-item {
+    width: 33%;
+    text-align: center;
+    color: gray;
+}
+.nav-item.active {
+    color: #d53541;
+}

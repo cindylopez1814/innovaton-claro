@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmbedVideoService } from 'ngx-embed-video';
+import { AuthService } from '../../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mapa-user',
@@ -10,7 +12,7 @@ export class MapaUserComponent implements OnInit {
   
   youtubeUrl = "https://www.youtube.com/watch?v=YZJGyLOj2iM";
   youtubeId = "YZJGyLOj2iM";
-  constructor(private embedService: EmbedVideoService) {
+  constructor(private embedService: EmbedVideoService, private authService: AuthService, private router: Router) {
     // console.log(this.embedService.embed(this.youtubeUrl));
     // console.log(this.embedService.embed_youtube(this.youtubeId));
   }
@@ -38,4 +40,12 @@ export class MapaUserComponent implements OnInit {
         formComponent.classList.add('show');
       }
 
+      onLogout() {
+        this.authService.logOut()
+          .then(() => {
+            this.router.navigate(['/Login']);
+          })
+          .catch(() => {
+          });
+      }
 }

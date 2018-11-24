@@ -1,0 +1,12 @@
+<form [formGroup]="authForm" *ngIf="!(authService.user | async)">
+  <div class="title">
+      <h1>MONITON</h1>
+  </div> 
+  <div>
+    <input type="text" placeholder="" formControlName="email">
+    <input type="password" placeholder="" formControlName="password">
+    <button type="button" (click)="onLogin()">
+      ENTRAR
+    </button>
+  </div>
+</form>
