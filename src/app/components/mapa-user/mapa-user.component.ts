@@ -17,15 +17,25 @@ export class MapaUserComponent implements OnInit {
   
   ngOnInit() {
   }
-      verVideo() {
-        // console.log('works');
-        const btns = document.getElementById('buttonContainer');
-        btns.classList.remove('show');
-        btns.classList.add('hidden');
-        
+  verVideo() {
+    // console.log('works');
+    const btns = document.getElementById('buttonContainer');
+    btns.classList.remove('show');
+    btns.classList.add('hidden');
+    
+    const videoEmbed= document.getElementById('videoElement');
+      
+    videoEmbed.classList.remove('hidden');
+    videoEmbed.classList.add('show');
+    }
+
+      pasarQuestionario(){
         const videoEmbed= document.getElementById('videoElement');
-        videoEmbed.classList.remove('hidden');
-        videoEmbed.classList.add('show');
+        videoEmbed.classList.remove('show');
+        videoEmbed.classList.add('hidden'); 
+        const formComponent = document.getElementById('formValidatorContainer');
+        formComponent.classList.remove('hidden');
+        formComponent.classList.add('show');
       }
 
 }
