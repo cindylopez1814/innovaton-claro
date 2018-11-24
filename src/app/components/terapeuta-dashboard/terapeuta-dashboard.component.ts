@@ -11,5 +11,10 @@ export class TerapeutaDashboardComponent implements OnInit {
 
   ngOnInit() {
   }
+  verPaciente(id:string) {
+    const listaPac = document.getElementById(id);
+    listaPac.classList.add('active');
+  }
 
+  
 }
