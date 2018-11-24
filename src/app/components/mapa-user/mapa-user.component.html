@@ -1,14 +1,19 @@
-<div id="buttonContainer" class="show">
-  <button (click)="verVideo()">Tarea 1</button>
-  <button>Tarea 2</button>
-  <button>Tarea 3</button>
-  <button>Tarea 4</button>
-  <button>Tarea 5</button>
+<div id="mapa">
+  <div id="buttonContainer" class="show">
+    <button (click)="verVideo()" id="t1">Tarea 1</button>
+    <button  id="t2">Tarea 2</button>
+    <button  id="t3">Tarea 3</button>
+    <button  id="t4">Tarea 4</button>
+    <button  id="t5">Tarea 5</button>
+  </div>
+  <div id="videoElement" class="hidden">
+    <iframe src="https://www.youtube.com/embed/YZJGyLOj2iM" frameborder="0" allowfullscreen></iframe>
+    <button (click)="pasarQuestionario()">¡Listo!</button>
+  </div>
+  <div id="formValidatorContainer" class="hidden">
+    <app-form-validation></app-form-validation>
+  </div>
 </div>
-<div id="videoElement" class="hidden">
-  <iframe src="https://www.youtube.com/embed/YZJGyLOj2iM" frameborder="0" allowfullscreen></iframe>
-  <button (click)="pasarQuestionario()">¡Listo!</button>
-</div>
-<div id="formValidatorContainer" class="hidden">
-  <app-form-validation></app-form-validation>
+<div id="menu">
+  
 </div>
