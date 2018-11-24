@@ -7,6 +7,9 @@ import { TerapeutaDashboardComponent } from './components/terapeuta-dashboard/te
 import { MapaUserComponent } from './components/mapa-user/mapa-user.component';
 import { FormValidationComponent } from './components/form-validation/form-validation.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { EmbedVideo } from 'ngx-embed-video';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,9 @@ import { FormValidationComponent } from './components/form-validation/form-valid
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    EmbedVideo.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
