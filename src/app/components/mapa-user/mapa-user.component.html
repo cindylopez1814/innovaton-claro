@@ -3,14 +3,28 @@
   <button (click)= "irDesafio()"></button>
 <div id="mapa">
 </div>
-  <div id='vistaDesafio' style="display: none">   
-    <div id="buttonContainer" class="show">
-      <button (click)="verVideo()" id="t1"></button>
-    </div>
-    <div id="videoElement" class="hidden">
-      <iframe src="https://www.youtube.com/embed/YZJGyLOj2iM" frameborder="0" allowfullscreen></iframe>
-      <button (click)="pasarQuestionario()">¡Listo!</button>
-    </div>
+  <div id='vistaDesafio' style="display: none">  
+    
+<h1>Alita de pollo</h1>
+<div class="row">
+  <div>1</div>
+  <div>Ver el video</div>
+  <div id="buttonContainer" class="show">
+    <button (click)="verVideo()" id="t1"></button>
+  </div>
+</div>
+<div class="row">
+    <div>2</div>
+    <div>Desafío</div>
+  </div>
+  <div id="videoElement" class="hidden">
+    <iframe src="https://www.youtube.com/embed/YZJGyLOj2iM" frameborder="0" allowfullscreen></iframe>
+    <button (click)="open()">¡Vamos a intentarlo!</button>
+  </div>
+  <div class="row">
+      <div>3</div>
+      <div>Premio</div>
+    </div> 
   </div>
 
 

@@ -53,4 +53,9 @@ export class MapaUserComponent implements OnInit {
     const vistaDesafio = document.getElementById('vistaDesafio')
     vistaDesafio.style.display = 'block';
   }
+
+  open() {
+    var win = window.open('https://sensor-innovaton.firebaseapp.com', '_blank');
+    win.focus();
+  }
 }
