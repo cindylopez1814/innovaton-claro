@@ -20,6 +20,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 
 import { AuthService } from './service/auth.service';
 import { StarRatingModule } from 'angular-star-rating';
+import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { StarRatingModule } from 'angular-star-rating';
     MapaUserComponent,
     FormValidationComponent,
     LoginComponent,
-    AvatarComponent
+    AvatarComponent,
+    AcelerometroComponent
   ],
   imports: [
     BrowserModule,

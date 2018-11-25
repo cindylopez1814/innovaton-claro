@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument,  AngularFirestoreCollection } from '@angular/fire/firestore';
@@ -11,7 +12,7 @@ import * as firebase from 'firebase';
 
 export class AuthService {
   Uid: string;
-
+  user:string;
   constructor(private firebaseAuth: AngularFireAuth, private afs: AngularFirestore) {
     this.uploadUserToFirestore();
    }
