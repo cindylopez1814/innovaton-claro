@@ -1,6 +1,15 @@
+section{
+  background-image: url('../../../assets/img/back.png');
+  background-position: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 15%;
+}
+
 .title {
   text-align: center;
-  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 img {
@@ -24,7 +33,7 @@ button {
   color: #FFFF;
   font-size: 22px;
   width: 80%;
-  margin: 10%;
+  margin: 5% 10%;
   padding: 4%;
   border-radius: 4px;
 }
@@ -33,9 +42,22 @@ a{
   font-size: 22px;
   width: 80%;
   margin: 25%;
+  color: #FFFF !important;
+  font-weight: 100;
 }
 
 .modal-content input {
   width: 100%;
 }
 
+.modal-content label {
+  color: #333333;
+  margin: 0%
+}
+
+label{
+  color: #FFFF;
+  float: left;
+  font-size: 19px;
+  margin: 4% 0% 0% 10%;
+}
