@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./mapa-user.component.css']
 })
 export class MapaUserComponent implements OnInit {
+  positionIx=135;
+  positionIy=40;
 
   youtubeUrl = 'https://www.youtube.com/watch?v=YZJGyLOj2iM';
   youtubeId = 'YZJGyLOj2iM';
@@ -31,7 +33,7 @@ export class MapaUserComponent implements OnInit {
     videoEmbed.classList.add('show');
     }
 
-      pasarQuestionario() {
+  pasarQuestionario() {
         const videoEmbed = document.getElementById('videoElement');
         videoEmbed.classList.remove('show');
         videoEmbed.classList.add('hidden');
@@ -40,7 +42,7 @@ export class MapaUserComponent implements OnInit {
         formComponent.classList.add('show');
       }
 
-      onLogout() {
+  onLogout() {
         this.authService.logOut()
           .then(() => {
             this.router.navigate(['/Login']);
@@ -48,4 +50,12 @@ export class MapaUserComponent implements OnInit {
           .catch(() => {
           });
       }
+
+  mover(){
+    const avatar = document.getElementById('personaje');
+    avatar.classList.add('move');
+    avatar.classList.remove('posInitial');
+    avatar.classList.add('posFinal');
+
+  }
 }
