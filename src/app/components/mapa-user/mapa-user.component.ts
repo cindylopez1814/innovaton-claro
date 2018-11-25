@@ -47,4 +47,10 @@ export class MapaUserComponent implements OnInit {
     avatar.classList.add('move');
     avatar.classList.remove('posInitial');
   }
+  irDesafio() {
+    const mapa = document.getElementById('mapa');
+    mapa.style.display = 'none'; 
+    const vistaDesafio = document.getElementById('vistaDesafio')
+    vistaDesafio.style.display = 'block';
+  }
 }
