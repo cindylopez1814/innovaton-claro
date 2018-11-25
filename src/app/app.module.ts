@@ -20,6 +20,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 
 import { AuthService } from './service/auth.service';
 import { HeaderComponent } from './components/header/header.component';
+import { StarRatingModule } from 'angular-star-rating';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HeaderComponent } from './components/header/header.component';
     ReactiveFormsModule,
     FormsModule,
     AngularFireDatabaseModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    StarRatingModule.forRoot()
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -7,7 +7,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 
 const routes: Routes = [
   {
-    path: 'Login', component: LoginComponent
+    path: '', component: LoginComponent
   },
   {
     path: 'terapeuta', component: TerapeutaDashboardComponent
