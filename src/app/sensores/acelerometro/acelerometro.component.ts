@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import { Gyroscope, AbsoluteOrientationSensor, Accelerometer } from 'motion-sensors-polyfill';
+
 @Component({
 selector: 'app-acelerometro',
 templateUrl: './acelerometro.component.html',
@@ -15,6 +16,7 @@ constructor() {
 
 }
   ngOnInit() {
+
     // this.sensor = new Accelerometer();
     this.sensor.start();
     this.sensor.onreading = () => {
@@ -26,6 +28,7 @@ constructor() {
     console.log('Acceleration along Z-axis: ' + this.sensor.z);
     };
     this.sensor.onerror = event => console.log(event.error.name, event.error.message);
+
   }
 
 }

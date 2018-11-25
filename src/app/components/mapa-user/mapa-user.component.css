@@ -42,22 +42,7 @@ button{
     width: 100%;
     margin: 0%;
 }
-.fa-times-circle{
-    color:#D53541;
-    font-size: 40px;
-    position: relative;
-    text-align: left;
-    float: right;
-    background-color: white;
-    border-radius: 50px;
-    text-align: center;
-}
-.header{
-    position: relative;
-    float: right;
-    right: 5px;
-    top: 5px;
-}
+
 
 #personaje{
     background-color: white;
@@ -71,15 +56,13 @@ button{
     z-index: 99999;
 }
 .posInitial{
-    bottom: 75px;
-    left : 140px;
+    bottom: 10px;
+    left : 158px;
 }
-.posFinal{
-    bottom: 130px;
-    left : 275px;
-}
+
 .move{
     animation-name: example;
+    -webkit-keyframes: type infinite;
     animation-duration: 6s;
     animation-iteration-count: 1;
 }
@@ -123,12 +106,14 @@ button{
     0%   {background-color:#D53541; left:160px;}
     10%  {background-color:white; left:180px;}
     20%  {background-color:#D53541; left:210px;}
-    30%  {background-color:white; left:250px; bottom: 85px;}
-    40% {background-color:#D53541; left:265px;bottom: 100px;}
-    50% {background-color:white; left:275px; bottom: 130px;}
+    30%  {background-color:white; left:250px; bottom: 10px;}
+    40% {background-color:#D53541; left:270px;bottom: 20px;}
+    50% {background-color:white; left:285px; bottom: 40px;}
+    70% {background-color:#D53541; left:295px; bottom: 60px;}
+    100% {background-color:#D53541; left:305px; bottom: 74px;}
 }
 @-webkit-keyframes type {
     to {
-        left:275px; bottom: 130px;
+        left:305px; bottom: 74px;
     }
   }

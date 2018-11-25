@@ -53,6 +53,7 @@ const routes: Routes = [
   // }
 ];
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,8 +66,10 @@ const routes: Routes = [
     HeaderComponent,
     LogrosComponent,
     RankComponent,
+
     AcelerometroComponent,
     MenuComponent
+
   ],
   imports: [
     RouterModule.forRoot(routes),
