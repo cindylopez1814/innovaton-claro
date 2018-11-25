@@ -1,3 +1,4 @@
+import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TerapeutaDashboardComponent } from './components/terapeuta-dashboard/terapeuta-dashboard.component';
@@ -26,6 +27,9 @@ const routes: Routes = [
   {
     path: 'Logros', component: LogrosComponent
   }
+  // {
+  //   path: 'acelerometro', component: AcelerometroComponent
+  // }
 ];
 
 @NgModule({

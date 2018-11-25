@@ -21,8 +21,11 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 import { AuthService } from './service/auth.service';
 import { HeaderComponent } from './components/header/header.component';
 import { StarRatingModule } from 'angular-star-rating';
+
 import { LogrosComponent } from './components/logros/logros.component';
 import { RankComponent } from './components/rank/rank.component';
+import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
+
 
 @NgModule({
   declarations: [
@@ -32,9 +35,11 @@ import { RankComponent } from './components/rank/rank.component';
     FormValidationComponent,
     LoginComponent,
     AvatarComponent,
+
     HeaderComponent,
     LogrosComponent,
     RankComponent,
+    AcelerometroComponent
   ],
   imports: [
     BrowserModule,
