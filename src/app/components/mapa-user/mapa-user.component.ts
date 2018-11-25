@@ -42,15 +42,6 @@ export class MapaUserComponent implements OnInit {
         formComponent.classList.add('show');
       }
 
-  onLogout() {
-        this.authService.logOut()
-          .then(() => {
-            this.router.navigate(['/Login']);
-          })
-          .catch(() => {
-          });
-      }
-
   mover() {
     const avatar = document.getElementById('personaje');
     avatar.classList.add('move');

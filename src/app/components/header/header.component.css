@@ -1,4 +1,4 @@
-div{
+header{
   height: 10vh;
   background-color: #FFFF;
   border-bottom: #333333 1px solid;
@@ -7,39 +7,30 @@ div{
   padding: 3%;
 }
 
-img{
+.isotipo img{
+  width: 10vw;
+}
+
+.isotipo {
+  float: left;
+}
+
+.logo img {
   width: 30vw;
 }
 
-.fa-sign-out-alt{
-  color:#D53541;
-  font-size: 30px;
-  position: relative;
-  text-align: left;
-  float: right;
-  background-color: white;
-  border-radius: 50px;
-  text-align: center;
-  border:none;
-  z-index:1;
+.logo{
+  width: 30vh;
+  display: inline;
 }
-.header{
-  border:none;
-  position: absolute;
-  float: right;
-  right: 20px;
-  top: 15px;
-  background-color: transparent;
-}
+
 button{
-  border:none;
-  position: absolute;
   float: right;
-  right: 20px;
-  top: 15px;
-  border:none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0%;
-  margin: 0%;
+  border: none;
+  background-color: #FFFF;
+}
+
+button i {
+  color: #D53541;
+  font-size: 30px;
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../service/auth.service';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,18 +9,16 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public authService: AuthService, public router: Router) { }
+
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
   }
-  hola(){
-    console.log("hola");
-  }
-  logout() {
-    console.log("salir");
+
+  onLogout() {
     this.authService.logOut()
       .then(() => {
-        this.router.navigate(['/Login']);
+        this.router.navigate(['/']);
       })
       .catch(() => {
       });
