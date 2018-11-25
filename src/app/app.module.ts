@@ -20,6 +20,15 @@ import { AvatarComponent } from './components/avatar/avatar.component';
 
 import { AuthService } from './service/auth.service';
 
+
+import { HeaderComponent } from './components/header/header.component';
+
+
+import { LogrosComponent } from './components/logros/logros.component';
+import { RankComponent } from './components/rank/rank.component';
+import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +36,12 @@ import { AuthService } from './service/auth.service';
     MapaUserComponent,
     FormValidationComponent,
     LoginComponent,
-    AvatarComponent
+    AvatarComponent,
+
+    HeaderComponent,
+    LogrosComponent,
+    RankComponent,
+    AcelerometroComponent
   ],
   imports: [
     BrowserModule,

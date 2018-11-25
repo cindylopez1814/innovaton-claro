@@ -14,11 +14,15 @@ export class AvatarComponent implements OnInit {
 
   selectAvatarBoy() {
     const boy = document.getElementById('boy');
-    boy.classList.add('select');
+    const girl = document.getElementById('girl');
+    boy.classList.remove('select');
+    girl.classList.add('select');
   }
 
   selectAvatarGirl() {
+    const boy = document.getElementById('boy');
     const girl = document.getElementById('girl');
-    girl.classList.add('select');
+    boy.classList.add('select');
+    girl.classList.remove('select');
   }
 }
