@@ -26,6 +26,8 @@ import { HeaderComponent } from './components/header/header.component';
 
 import { LogrosComponent } from './components/logros/logros.component';
 import { RankComponent } from './components/rank/rank.component';
+import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
@@ -41,7 +43,10 @@ import { RankComponent } from './components/rank/rank.component';
     HeaderComponent,
     LogrosComponent,
     RankComponent,
-    
+
+    AcelerometroComponent,
+    MenuComponent
+
   ],
   imports: [
     BrowserModule,

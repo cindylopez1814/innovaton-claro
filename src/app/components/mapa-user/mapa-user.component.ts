@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./mapa-user.component.css']
 })
 export class MapaUserComponent implements OnInit {
-  positionIx=135;
-  positionIy=40;
+  positionIx = 135;
+  positionIy = 40;
 
   youtubeUrl = 'https://www.youtube.com/watch?v=YZJGyLOj2iM';
   youtubeId = 'YZJGyLOj2iM';
@@ -51,7 +51,7 @@ export class MapaUserComponent implements OnInit {
           });
       }
 
-  mover(){
+  mover() {
     const avatar = document.getElementById('personaje');
     avatar.classList.add('move');
     avatar.classList.remove('posInitial');

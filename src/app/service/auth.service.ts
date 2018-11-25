@@ -12,7 +12,8 @@ import * as firebase from 'firebase';
 
 export class AuthService {
   Uid: string;
-  user:string;
+  user: string;
+
   constructor(private firebaseAuth: AngularFireAuth, private afs: AngularFirestore) {
     this.uploadUserToFirestore();
    }
