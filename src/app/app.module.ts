@@ -26,7 +26,7 @@ import { HeaderComponent } from './components/header/header.component';
 
 import { LogrosComponent } from './components/logros/logros.component';
 import { RankComponent } from './components/rank/rank.component';
-import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
+
 
 
 @NgModule({
@@ -41,7 +41,7 @@ import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.comp
     HeaderComponent,
     LogrosComponent,
     RankComponent,
-    AcelerometroComponent
+    
   ],
   imports: [
     BrowserModule,
