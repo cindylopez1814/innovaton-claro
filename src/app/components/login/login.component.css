@@ -1,0 +1,30 @@
+.title {
+  text-align: center;
+  margin-top: 30%;
+}
+
+img {
+  width: 50%;
+}
+
+.contInput {
+  text-align: center;
+  margin-top: 10%;
+}
+
+input {
+  width: 80%;
+  border: none;
+  padding: 4%;
+}
+
+button {
+  background-color:#D53541;
+  border: none;
+  color: #FFFF;
+  font-size: 22px;
+  width: 80%;
+  margin: 10%;
+  padding: 4%;
+  border-radius: 4px;
+}

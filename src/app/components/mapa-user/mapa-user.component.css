@@ -19,36 +19,79 @@ button{
     border:none;
     background-color: transparent;
     cursor: pointer;
+    padding: 0%;
 }
 #mapa{
-    background-image: url("../../../assets/Img/fondoMapa.png");
-    width: 335px;
-    z-index: -1;
+    background-image: url("../../../assets/img/mapa.jpg");
+    position: relative;
+    height: 170vw;
     background-repeat: no-repeat;
+    background-size:contain;
+    z-index: -1;
+    padding: 0%;
+    margin: 0%;
+    top:0%;
+    background-color:#6BA443;
 }
 #menu{
-    padding: 1%;
+    padding-top:4%; 
+    padding-left: 8%;
+    position: relative;
+    background-color: #D53541;
+    bottom: 0%;
+    width: 100%;
+    margin: 0%;
 }
+.fa-times-circle{
+    color:#D53541;
+    font-size: 40px;
+    position: relative;
+    text-align: left;
+    float: right;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+.header{
+    position: relative;
+    float: right;
+    right: 5px;
+    top: 5px;
+}
+
+#personaje{
+    background-color: white;
+    border-radius: 50px;background-image: url("../../../assets/img/avatar-03.png");
+    position: absolute;
+    height: 50px;
+    width:48px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    cursor: pointer;
+    z-index: 99999;
+}
+.posInitial{
+    bottom: 75px;
+    left : 140px;
+}
+.posFinal{
+    bottom: 130px;
+    left : 275px;
+}
+.move{
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
 /*MEDIA QUERYS*/
 @media only screen and (max-width: 600px) {
-    #mapa{
-        position: relative;
-        background-image: url("../../../assets/Img/mapP.png");
-        height: 100vw;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
+    
 
 }
 
 @media only screen and (max-width: 480px) {
-    #mapa{
-        position: relative;
-        background-image: url("../../../assets/Img/mapP.png");
-        width: 100%;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
+    
    #t1{
        position: absolute;
        top:329px;
@@ -73,11 +116,19 @@ button{
     top:100px;
     left:185px
 }
-#menu{
-    position: absolute;
-    background-color: #D53541;
-    bottom: 0%;
-    width: 100%;
-}
+
 
 }
+@keyframes example {
+    0%   {background-color:#D53541; left:160px;}
+    10%  {background-color:white; left:180px;}
+    20%  {background-color:#D53541; left:210px;}
+    30%  {background-color:white; left:250px; bottom: 85px;}
+    40% {background-color:#D53541; left:265px;bottom: 100px;}
+    50% {background-color:white; left:275px; bottom: 130px;}
+}
+@-webkit-keyframes type {
+    to {
+        left:275px; bottom: 130px;
+    }
+  }
