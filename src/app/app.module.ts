@@ -30,6 +30,7 @@ import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.comp
 import { MenuComponent } from './components/menu/menu.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,8 +43,10 @@ import { MenuComponent } from './components/menu/menu.component';
     HeaderComponent,
     LogrosComponent,
     RankComponent,
+
     AcelerometroComponent,
     MenuComponent
+
   ],
   imports: [
     BrowserModule,
