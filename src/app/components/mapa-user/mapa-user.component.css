@@ -46,7 +46,8 @@ button{
 
 #personaje{
     background-color: white;
-    border-radius: 50px;background-image: url("../../../assets/img/avatar-03.png");
+    border-radius: 50px;
+    background-image: url("../../../assets/img/avatar-03.png");
     position: absolute;
     height: 50px;
     width:48px;

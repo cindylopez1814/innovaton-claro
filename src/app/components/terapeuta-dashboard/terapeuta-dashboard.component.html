@@ -1,25 +1,69 @@
 <app-header></app-header>
-
-<h1 class="title">Mi panel de control</h1>
-
 <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Lista de <br> pacientes</a>
-      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Asignar <br> tareas</a>
-      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Revisar <br> progreso</a>
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"></a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"></a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"></a>
     </div>
   </nav>
-  <div class="tab-content" id="nav-tabContent">
+  <div class="tab-content show" id="nav-tabContent">
+    <h5 class="title">Tus Asignaciones</h5>
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <ul class="list-group">
-            <li id="paciente1" (click)="verPaciente('paciente1')"  class="col-12 list-group-item list-group-item-action">Paciente 1</li>
-            <li id="paciente2" (click)="verPaciente('paciente2')" class="list-group-item list-group-item-action">Paciente 2</li>
-            <li id="paciente3" (click)="verPaciente('paciente3')" class="list-group-item list-group-item-action">Paciente 3</li>
-            <li id="paciente4" (click)="verPaciente('paciente4')" class="list-group-item list-group-item-action">Paciente 4</li>
-            <li id="paciente5" (click)="verPaciente('paciente5')" class="list-group-item list-group-item-action">Paciente 5</li>
+        <ul class="list-group justify-align-center">
+            <li class="paciente" id="paciente1" (click)="verPaciente('paciente1')"  class="col-12 list-group-item list-group-item-action">
+              <div class="row">
+                  <div class="col-1"></div>
+                <div class="col"><img class="fotoPerfil" src="../../../assets/img/avatar-03.png">
+                </div>
+                <div class="col">
+                    <p>Evelin Escudero<br>Paralisis Cerebral</p>
+                </div>
+                <div class="col-1"></div>
+              </div>
+              </li>
+              <li class="paciente" id="paciente2" (click)="verPaciente('paciente2')"  class="col-12 list-group-item list-group-item-action">
+                  <div class="row">
+                      <div class="col-1"></div>
+                    <div class="col"><img class="fotoPerfil" src="../../../assets/img/avatar-04.png">
+                    </div>
+                    <div class="col">
+                        <p>Eduardo Camus<br>Espína Bífida</p>
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  </li>
+                  <li class="paciente" id="paciente3" (click)="verPaciente('paciente3')"  class="col-12 list-group-item list-group-item-action">
+                      <div class="row">
+                          <div class="col-1"></div>
+                        <div class="col"><img class="fotoPerfil" src="../../../assets/img/avatar-04.png">
+                        </div>
+                        <div class="col">
+                            <p>Daniel Peralta<br>Espína Bífida</p>
+                        </div>
+                        <div class="col-1"></div>
+                      </div>
+                      </li>
         </ul>
       </div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    </div>
+    <div class="tab-pane fade hidden" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <ul class="list-group">
+                <div class="row" id="filaPerfil">
+                    <div class="col-1"></div>
+                  <div class="col"><img class="fotoPerfil" src="../../../assets/img/avatar-04.png"><br>
+                    Evelyn Escudero <br> Paralisis Cerebral<br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div> 
+                      <button class="btn-danger">Asignar Desafíos</button>
+                  </div>
+                  <div class="col-1"></div>
+                </div>
+            
+                  
+          </ul>
+    </div>
+    <div class="tab-pane fade hidden" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <ul class="list-group">
             <li id="tarea1" (click)="verPaciente('tarea1')" class="list-group-item list-group-item-action">Asignar tarea  1</li>
             <li id="tarea2" (click)="verPaciente('tarea2')" class="list-group-item list-group-item-action">Asignar tarea 2</li>
@@ -28,59 +72,4 @@
             <li id="tarea5" (click)="verPaciente('tarea5')" class="list-group-item list-group-item-action">Asignar tarea  5</li>
           </ul>
     </div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-        <ul class="list-group">
-            <li id="progreso1" (click)="verPaciente('progreso1')" class="list-group-item list-group-item-action" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Ver progreso de tarea 1</li>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body">
-                  <div class="progress">
-                      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-12 containerStars">
-                        <i class="fas fa-star starImg"></i>
-                        <p>{{counter}}</p>
-                      </div>
-                      <button class="btn-danger btnStars" (click)="addStar()">Agregar estrellas</button>
-                    <textarea name="comentFeedback" id="coment1" cols="30" rows="5"></textarea>
-                    <button class="btn-danger">Dar Feedback</button>
-                    </div>
-                    
-              </div>
-            </div>
-            <li id="progreso2" (click)="verPaciente('progreso2')" class="list-group-item list-group-item-action" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">Ver progreso de tarea 2</li>
-            <div class="collapse" id="collapseExample2">
-                <div class="card card-body">
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm-12 containerStars">
-                        <i class="fas fa-star starImg"></i>
-                        <p>{{counter}}</p>
-                      </div>
-                      <button class="btn-danger btnStars" (click)="addStar()">Agregar estrellas</button>
-                    </div>
-                </div>        
-            </div>
-            <li id="progreso3" (click)="verPaciente('progreso3')" class="list-group-item list-group-item-action" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">Ver progreso de tarea 3</li>
-            <div class="collapse" id="collapseExample3">
-              <div class="card card-body">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm-12 containerStars">
-                        <i class="fas fa-star starImg"></i>
-                        <p>{{counter}}</p>
-                      </div>
-                      <button class="btn-danger btnStars" (click)="addStar()">Agregar estrellas</button>
-                    </div>  
-              </div>          
-            </div>
-            <li id="progreso4" (click)="verPaciente('progreso4')" class="list-group-item list-group-item-action">Ver progreso de tarea 4</li>
-            <li id="progreso5" (click)="verPaciente('progreso5')" class="list-group-item list-group-item-action">Ver progreso de tarea 5</li>
-          </ul>
-    </div>
-    
-  </div>
+
