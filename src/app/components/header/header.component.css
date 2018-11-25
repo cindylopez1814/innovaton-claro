@@ -1,4 +1,4 @@
-div{
+header{
   height: 10vh;
   background-color: #FFFF;
   border-bottom: #333333 1px solid;
@@ -7,6 +7,30 @@ div{
   padding: 3%;
 }
 
-img{
+.isotipo img{
+  width: 10vw;
+}
+
+.isotipo {
+  float: left;
+}
+
+.logo img {
   width: 30vw;
+}
+
+.logo{
+  width: 30vh;
+  display: inline;
+}
+
+button{
+  float: right;
+  border: none;
+  background-color: #FFFF;
+}
+
+button i {
+  color: #D53541;
+  font-size: 30px;
 }

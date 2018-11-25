@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
+import { RouterModule, Routes } from '@angular/router';
 
 import { TerapeutaDashboardComponent } from './components/terapeuta-dashboard/terapeuta-dashboard.component';
 import { MapaUserComponent } from './components/mapa-user/mapa-user.component';
@@ -29,6 +29,29 @@ import { RankComponent } from './components/rank/rank.component';
 import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
 import { MenuComponent } from './components/menu/menu.component';
 
+const routes: Routes = [
+  {
+    path: '', component: LoginComponent
+  },
+  {
+    path: 'terapeuta', component: TerapeutaDashboardComponent
+  },
+  {
+    path: 'Home', component: MapaUserComponent
+  },
+  {
+    path: 'Start', component: AvatarComponent
+  },
+  {
+    path: 'Ranking', component: RankComponent
+  },
+  {
+    path: 'Logros', component: LogrosComponent
+  }
+  // {
+  //   path: 'acelerometro', component: AcelerometroComponent
+  // }
+];
 
 @NgModule({
   declarations: [
@@ -46,8 +69,9 @@ import { MenuComponent } from './components/menu/menu.component';
     MenuComponent
   ],
   imports: [
+    RouterModule.forRoot(routes),
+    RouterModule,
     BrowserModule,
-    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     HttpClientModule,
