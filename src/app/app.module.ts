@@ -19,6 +19,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AvatarComponent } from './components/avatar/avatar.component';
 
 import { AuthService } from './service/auth.service';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AuthService } from './service/auth.service';
     MapaUserComponent,
     FormValidationComponent,
     LoginComponent,
-    AvatarComponent
+    AvatarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
