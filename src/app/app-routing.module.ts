@@ -5,6 +5,7 @@ import { MapaUserComponent } from './components/mapa-user/mapa-user.component';
 import { LoginComponent } from './components/login/login.component';
 import { AvatarComponent } from './components/avatar/avatar.component';
 
+
 const routes: Routes = [
   {
     path: '', component: LoginComponent
@@ -17,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'Start', component: AvatarComponent
-  }
+  },
 ];
 
 @NgModule({

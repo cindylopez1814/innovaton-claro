@@ -28,3 +28,14 @@ button {
   padding: 4%;
   border-radius: 4px;
 }
+
+a{
+  font-size: 22px;
+  width: 80%;
+  margin: 25%;
+}
+
+.modal-content input {
+  width: 100%;
+}
+

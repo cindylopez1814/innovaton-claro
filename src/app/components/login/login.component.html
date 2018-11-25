@@ -1,12 +1,31 @@
 <form [formGroup]="authForm" *ngIf="!(authService.user | async)">
   <div class="title">
     <img src="../../../assets/img/Logo.png" alt="logo">
-  </div> 
+  </div>
   <div class="contInput">
-    <input type="text" placeholder="" formControlName="email">
+    <input type="text" placeholder="abc@correo.cl" formControlName="email">
     <input type="password" placeholder="Numero de ficha" formControlName="password">
   </div>
   <button type="button" (click)="onLogin()">
     Ingresar
   </button>
+  <a data-toggle="modal" data-target="#loginModal">Ingresar terapeuta</a>
+</form>
+
+<!-- Modal -->
+<form [formGroup]="loginForm" *ngIf="!(authService.user | async)">
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <input type="text" placeholder="Email" formControlName="use">
+          <input type="password" placeholder="password" formControlName="pass">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" (click)="ingresar()" data-dismiss="modal">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </form>
