@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LoginTerapeutaComponent implements OnInit {
   loginForm: FormGroup;
+  user: any;
 
   constructor(public loginService: LoginTeraService, private formBuilder: FormBuilder, private router: Router) {
     this.createLogin();

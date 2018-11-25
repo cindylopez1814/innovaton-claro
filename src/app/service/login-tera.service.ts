@@ -10,6 +10,7 @@ import * as firebase from 'firebase';
 })
 export class LoginTeraService {
   Uid: string;
+  user: any;
 
   constructor(private firebaseAuth: AngularFireAuth, private afs: AngularFirestore) {
     this.uploadUserToFire();

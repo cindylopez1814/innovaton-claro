@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validator, Validators} from '@angular/forms';
 import { AuthService } from '../../service/auth.service';
-import { LoginTeraService } from '../../service/login-tera.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,12 +10,9 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   authForm: FormGroup;
-  loginForm: FormGroup;
 
-  // tslint:disable-next-line:max-line-length
-  constructor(private formBuilder: FormBuilder, public authService: AuthService, private router: Router, public loginService: LoginTeraService) {
+  constructor(private formBuilder: FormBuilder, public authService: AuthService, private router: Router) {
     this.creatorAuthForm();
-    this.createLogin();
   }
 
   ngOnInit() {
@@ -29,13 +25,6 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  createLogin() {
-    this.loginForm = this.formBuilder.group({
-      use: ['', Validators.compose([Validators.required])],
-      pass: ['', Validators.compose([Validators.required, Validators.minLength(6)])]
-    });
-  }
-
   onLogin() {
     this.authService.login(this.authForm.value.email, this.authForm.value.password)
       .then(() => {
@@ -44,12 +33,4 @@ export class LoginComponent implements OnInit {
       .catch(() => {
       });
   }
-
-  ingresar() {
-    this.loginService.entrar(this.loginForm.value.use, this.loginForm.value.pass)
-    .then(() => {
-      this.router.navigate(['terapeuta']);
-    });
-  }
-
 }
