@@ -18,7 +18,6 @@ import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AuthService } from './service/auth.service';
-import { StarRatingModule } from 'angular-star-rating';
 
 @NgModule({
   declarations: [
@@ -38,8 +37,7 @@ import { StarRatingModule } from 'angular-star-rating';
     ReactiveFormsModule,
     FormsModule,
     AngularFireDatabaseModule,
-    AngularFirestoreModule,
-    StarRatingModule.forRoot()
+    AngularFirestoreModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
