@@ -42,23 +42,7 @@ button{
     width: 100%;
     margin: 0%;
 }
-.fa-sign-out-alt{
-    color:#D53541;
-    font-size: 30px;
-    position: relative;
-    text-align: left;
-    float: right;
-    background-color: white;
-    border-radius: 50px;
-    text-align: center;
-}
-.header{
-    position: absolute;
-    float: right;
-    right: 20px;
-    top: 15px;
-    z-index: 99999;
-}
+
 
 #personaje{
     background-color: white;
