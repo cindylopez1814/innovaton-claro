@@ -38,6 +38,13 @@ button {
   border-radius: 4px;
 }
 
+label{
+  color: #FFFF;
+  float: left;
+  font-size: 19px;
+  margin: 4% 0% 0% 10%;
+}
+
 a{
   font-size: 22px;
   width: 80%;
@@ -45,20 +52,4 @@ a{
   color: #FFFF !important;
   font-weight: 100;
   text-decoration: underline;
-}
-
-.modal-content input {
-  width: 100%;
-}
-
-.modal-content label {
-  color: #333333;
-  margin: 0%
-}
-
-label{
-  color: #FFFF;
-  float: left;
-  font-size: 19px;
-  margin: 4% 0% 0% 10%;
 }

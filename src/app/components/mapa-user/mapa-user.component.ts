@@ -46,6 +46,5 @@ export class MapaUserComponent implements OnInit {
     const avatar = document.getElementById('personaje');
     avatar.classList.add('move');
     avatar.classList.remove('posInitial');
-    
   }
 }

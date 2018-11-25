@@ -28,6 +28,7 @@ import { LogrosComponent } from './components/logros/logros.component';
 import { RankComponent } from './components/rank/rank.component';
 import { AcelerometroComponent } from './sensores/acelerometro/acelerometro.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { LoginTerapeutaComponent } from './components/login-terapeuta/login-terapeuta.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,9 @@ const routes: Routes = [
   },
   {
     path: 'Logros', component: LogrosComponent
+  },
+  {
+    path: 'Login', component: LoginTerapeutaComponent
   }
   // {
   //   path: 'acelerometro', component: AcelerometroComponent
@@ -68,7 +72,8 @@ const routes: Routes = [
     RankComponent,
 
     AcelerometroComponent,
-    MenuComponent
+    MenuComponent,
+    LoginTerapeutaComponent
 
   ],
   imports: [

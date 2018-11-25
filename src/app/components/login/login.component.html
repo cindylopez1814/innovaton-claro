@@ -1,7 +1,7 @@
 <section>
   <form [formGroup]="authForm" *ngIf="!(authService.user | async)">
     <div class="title">
-      <img src="../../../assets/img/Logo.png" alt="logo">
+      <img src="../../../assets/img/blanco.png" alt="logo">
     </div>
     <div class="contInput">
       <label for="email">Ingresa email</label>
@@ -12,26 +12,6 @@
     <button type="button" (click)="onLogin()">
       Ingresar
     </button>
-    <a data-toggle="modal" data-target="#loginModal">Ingreso terapeuta</a>
-  </form>
-
-  <!-- Modal -->
-  <form [formGroup]="loginForm" *ngIf="!(authService.user | async)">
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">ng
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <label for="text">Email</label>
-            <input type="text" placeholder="Email" formControlName="use">
-            <label for="pass">Contraseña</label>
-            <input type="password" placeholder="password" formControlName="pass">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-primary" (click)="ingresar()" data-dismiss="modal">Ingresar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a routerLink= '/Login'>Ingreso terapeuta</a>
   </form>
 </section>

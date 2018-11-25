@@ -1,0 +1,16 @@
+<section>
+  <form [formGroup]="loginForm" *ngIf="!(loginService.user | async)">
+
+    <div class="title">
+      <img src="../../../assets/img/blanco.png" alt="logo">
+    </div>
+    <div class="contInput">
+      <label for="text">Email</label>
+      <input type="text" placeholder="Email" formControlName="use">
+      <label for="pass">Contraseña</label>
+      <input type="password" placeholder="password" formControlName="pass">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="ingresar()">Ingresar</button>
+    <a routerLink= '/'>Volver</a>
+  </form>
+</section>
