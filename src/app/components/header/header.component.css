@@ -1,0 +1,12 @@
+div{
+  height: 10vh;
+  background-color: #FFFF;
+  border-bottom: #333333 1px solid;
+  box-shadow: #333333;
+  text-align: center;
+  padding: 3%;
+}
+
+img{
+  width: 30vw;
+}

@@ -1,19 +1,19 @@
+<app-header></app-header>
 <section>
-<h6>
-  Elije tu personaje
-</h6>
-  <div  id="boy" (click)= 'selectAvatarBoy()'>
-    <img src="../../../assets/img/avatar_Mesa de trabajo 1 copia.png" alt="boy">
+  <label for="1">1</label>
+  <p>Elije tu personaje</p>
+  <div>
+    <img src="../../../assets/img/avatar_Mesa de trabajo 1 copia.png" alt="boy" id="boy" (click)= 'selectAvatarBoy()'>
   </div>
   
-  <div class="niña" id="girl" (click)= 'selectAvatarGirl'>
-    <img src="../../../assets/img/avatar_Mesa de trabajo 1.png" alt="girl">
+  <div>
+    <img src="../../../assets/img/avatar_Mesa de trabajo 1.png" alt="girl" id="girl" (click)='selectAvatarGirl()'>
   </div>
 </section>
 <section>
   <label for="2">2
-    <input type="text" placeholder="Escribe tu nombre">
   </label>
+  <input type="text" placeholder="Escribe tu nombre">
 </section>
 <button routerLink= '/Home'>
   Aceptar
